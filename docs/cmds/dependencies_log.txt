@@ -1,0 +1,5 @@
+# Manually generate logs
+npm run log:deps
+
+# View generated files (do not commit)
+ls .github/logs/dependencies/*.json

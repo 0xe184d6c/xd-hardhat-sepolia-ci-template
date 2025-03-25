@@ -1,0 +1,24 @@
+# .github/workflows/dependency-logging.yml
+name: Dependency Version Tracking
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1' # Weekly on Sundays
+  pull_request:
+    branches: [main]
+
+jobs:
+  log-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run log:deps
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dependency-logs
+          path: .github/logs/dependencies/
+          retention-days: 30

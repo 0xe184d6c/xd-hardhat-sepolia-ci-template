@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "log:deps": "mkdir -p .github/logs/dependencies && npm list --json > .github/logs/dependencies/$(date +%Y-%m-%dT%H%M%S)_dependencies.json"
   },
   "keywords": [],
   "author": "",

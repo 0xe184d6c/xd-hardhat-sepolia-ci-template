@@ -1,0 +1,7 @@
+/logs
+├── dependencies
+│   ├── current.json
+│   ├── history
+│   │   ├── 2024-03-25_dependencies.json
+│   │   └── 2024-03-26_dependencies.json
+│   └── README.md
