@@ -1,0 +1,14 @@
+npm install --legacy-peer-deps
+
+# working
+npm install --force
+
+# 1. Delete existing dependencies
+rm -rf node_modules package-lock.json
+
+# 2. Edit package.json to change:
+"@types/chai": "^4.3.0"  // or remove this line entirely
+
+# 3. Install with dotenv
+npm install
+npm install dotenv --save-dev

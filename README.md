@@ -1,1 +1,1 @@
-# xd-hardhat-sepolia-ci-template
+# Factory Sepolia Template

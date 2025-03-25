@@ -1,0 +1,5 @@
+npx hardhat --version
+npx tsc --noEmit
+npx hardhat compile
+npx hardhat test --no-compile
+npm ls --depth=1

@@ -1,0 +1,4 @@
+npm init -y
+npm install --save-dev hardhat 
+npx hardhat init # ← This automatically installs toolbox with correct dependencies
+npm install --save-dev dotenv typescript ts-node @types/node
