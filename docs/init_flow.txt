@@ -11,3 +11,6 @@ npx hardhat init
 
 # Choose "Create a TypeScript project"
 # Delete initial contract/test if generated
+
+# tsconfig.json
+npx tsc --init
