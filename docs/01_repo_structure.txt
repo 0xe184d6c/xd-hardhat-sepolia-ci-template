@@ -1,0 +1,7 @@
+├── contracts/        # Solidity (Lock.sol)
+├── scripts/          # TS deployment scripts
+├── test/             # TS tests
+├── ignition/         # Hardhat deployment modules
+├── .github/          # CI/CD workflows (create if missing)
+├── hardhat.config.ts # Sepolia + Etherscan config
+└── tsconfig.json     # TypeScript rules
